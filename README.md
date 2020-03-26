@@ -55,7 +55,7 @@ Insert a flash drive and rename it `DELETE`. (**IMPORTANT**: The drive and every
 Then open a terminal (*/Applications/Utilites/Terminal.app*) and copy and paste the following:  
 
 ```
-bash <(curl -s https://raw.githubusercontent.com/uPaymeiFixit/evga-z270-stinger-hackintosh-guide/master/high-sierra-media-creation-tool.command)
+bash <(curl -s https://raw.githubusercontent.com/uPaymeiFixit/evga-z270-stinger-macOS-high-sierra-guide/master/high-sierra-media-creation-tool.command)
 ```
 
 ![rename](https://user-images.githubusercontent.com/1683528/77610004-bfed0c80-6ede-11ea-95cf-2f2efbc7b0cb.gif)
