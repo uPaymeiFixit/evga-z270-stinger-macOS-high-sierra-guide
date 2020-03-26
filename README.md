@@ -21,7 +21,7 @@ This guide will show you how to install **macOS High Sierra 10.13.6** on a deskt
 - [x] NVMe
 - [x] — TRIM Support
 - [x] Hardware sensors
-- [-] Audio
+- [x] Audio
 - [x] — All 5 analog in/out ports
 - [x] Ethernet
 - [x] Sleep
@@ -44,8 +44,8 @@ This guide will show you how to install **macOS High Sierra 10.13.6** on a deskt
 - [x] - iMessage / Facetime
 
 ## What doesn't work
-- [-] Audio
-- [-] — HDMI Audio (only one port works)
+- [x] Audio
+- [x] — HDMI Audio (only one port works)
 - [ ] Power button
 - [ ] Wi-Fi (AW-CB210NF-P)
 
