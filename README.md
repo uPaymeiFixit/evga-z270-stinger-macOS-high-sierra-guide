@@ -13,7 +13,7 @@ This guide will show you how to install **macOS High Sierra 10.13.6** on a deskt
 
 [View on PC Part Picker](https://pcpartpicker.com/b/ycMZxr)
 
-**Note:** This guide may need to be tweaked for similar hardware, such as any other 200 series motherboard. Any (or no) NVMe drive, any Kaby Lake CPU, and any GPU will likely work as is. I won't go into too much detail on this guide as there will be more relevant and up-to-date informaiton for your specific machine. The [OpenCore vanilla guide](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/) is a great resource, albeit rather long. Your main takeaway from this should be that the focus is 100% on the bootloader / EFI folder. No monifications need be made to macOS other than installing the Nvidia Web Drivers. 
+**Note:** This guide may need to be tweaked for similar hardware, such as any other 200 series motherboard. Any (or no) NVMe drive, any Kaby Lake CPU, and any GPU will likely work as is. I won't go into too much detail on this guide as there will be more relevant and up-to-date information for your specific machine. The [OpenCore vanilla guide](https://khronokernel-2.gitbook.io/opencore-vanilla-desktop-guide/) is a great resource, albeit rather long. Your main takeaway from this should be that the focus is 100% on the bootloader / EFI folder. No monifications need be made to macOS other than installing the Nvidia Web Drivers. 
 
 ## What works
 - [x] GPU hardware acceleration
