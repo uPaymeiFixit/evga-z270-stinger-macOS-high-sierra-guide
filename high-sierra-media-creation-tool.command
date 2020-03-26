@@ -1,6 +1,6 @@
 #!/bin/bash
 echo "Searching for drive named \"DELETE\" and formatting it"
-diskutil partitionDisk /dev/`diskutil info "DELETE" | grep "Part of Whole:" | tail -c 6` GPT JHFS+ "DELETE" 100%
+sudo diskutil partitionDisk /dev/`diskutil info "DELETE" | grep "Part of Whole:" | tail -c 6` GPT JHFS+ "DELETE" 100%
 
 mkdir upaymeifixit-high-sierra-media-creation-tool
 cd upaymeifixit-high-sierra-media-creation-tool
@@ -30,17 +30,17 @@ echo "Compiling macOS High Sierra files into \"Install macOS High Sierra.app\""
 echo "high-sierra-files" | ./gibMacOS-c2e45ce568069d0dce027ec84d9c1ed8bbad2e21/BuildmacOSInstallApp.command
 
 echo "Creating install media on volume named \"DELETE\". Volume will now be named \"Install macOS High Sierra\""
-./high-sierra-files/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --nointeraction --volume /Volumes/DELETE
+sudo ./high-sierra-files/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --nointeraction --volume /Volumes/DELETE
 
 echo "Downloading my repo with EFI folder"
 wget https://github.com/uPaymeiFixit/evga-z270-stinger-hackintosh-guide/archive/master.zip
 unzip master.zip
 
 echo "Mounting EFI folder of volume named \"Install macOS High Sierra\""
-diskutil mount "`diskutil info "Install macOS High Sierra" | grep "Part of Whole:" | tail -c 6`s1"
+sudo diskutil mount "`diskutil info "Install macOS High Sierra" | grep "Part of Whole:" | tail -c 6`s1"
 
 echo "Copying my EFI folder to install drive"
-cp -a evga-z270-stinger-hackintosh-guide-master/EFI /Volumes/EFI/
+sudo cp -a evga-z270-stinger-hackintosh-guide-master/EFI /Volumes/EFI/
 
 echo "Done! Would you like me to delete the installer files we used? (y/n)"
 tput bel
