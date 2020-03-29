@@ -33,7 +33,7 @@ echo "Creating install media on volume named \"DELETE\". Volume will now be name
 sudo ./high-sierra-files/Install\ macOS\ High\ Sierra.app/Contents/Resources/createinstallmedia --nointeraction --volume /Volumes/DELETE
 
 echo "Downloading my repo with EFI folder"
-wget https://github.com/uPaymeiFixit/evga-z270-stinger-hackintosh-guide/archive/master.zip
+wget https://github.com/uPaymeiFixit/evga-z270-stinger-macOS-high-sierra-guide/archive/master.zip
 unzip master.zip
 
 echo "Mounting EFI folder of volume named \"Install macOS High Sierra\""
