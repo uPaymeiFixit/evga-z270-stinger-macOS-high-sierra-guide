@@ -40,7 +40,7 @@ echo "Mounting EFI folder of volume named \"Install macOS High Sierra\""
 sudo diskutil mount "`diskutil info "Install macOS High Sierra" | grep "Part of Whole:" | tail -c 6`s1"
 
 echo "Copying my EFI folder to install drive"
-sudo cp -a evga-z270-stinger-hackintosh-guide-master/EFI /Volumes/EFI/
+sudo cp -a evga-z270-stinger-macOS-high-sierra-guide-master/EFI /Volumes/EFI/
 
 echo "Done! Would you like me to delete the installer files we used? (y/n)"
 tput bel
